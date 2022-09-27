@@ -5,6 +5,16 @@ Exemplo de MinimalApi sem conectar ao Banco de dados
 
 builder.Services.AddEndpointsApiExplorer(); //permite abrir no navegador
 
+builder.Services.AddSwaggerGen();
+
+app.UseSwagger();
+
+app.UseSwaggerUI();
+
+builder.Services.AddEndpointsApiExplorer(); //permite abrir no navegador
+
+
+
 **Baixar no NuGet
 
 Swashbuckle.AspNetCore.Swagger
